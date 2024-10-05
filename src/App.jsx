@@ -75,7 +75,6 @@ const App = () => {
       <div>
         <Toaster position="top-right" reverseOrder={false} />
       </div>
-
       <SearchBar handleSearch={handleSearch} />
       {isLoading && <Loader />}
 
