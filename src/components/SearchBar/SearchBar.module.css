@@ -1,0 +1,40 @@
+.header {
+  border: 2px solid rgb(146, 145, 145);
+  border-radius: 6px;
+  width: 360px;
+}
+
+.form {
+  display: flex;
+  border: none;
+  cursor: pointer;
+}
+
+.input {
+  width: 360px;
+  border: none;
+}
+::placeholder {
+  font-style: italic;
+  font-size: 17px;
+  padding-left: 3px;
+  text-align: start;
+}
+
+.btn {
+  background: transparent;
+  width: 70px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+}
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+.icon {
+  width: 35px;
+  height: 35px;
+}
