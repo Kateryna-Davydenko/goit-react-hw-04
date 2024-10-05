@@ -1,18 +1,20 @@
 .header {
   border: 2px solid rgb(146, 145, 145);
   border-radius: 6px;
-  width: 360px;
+  width: 100%;
 }
 
 .form {
   display: flex;
+  justify-content: center;
   border: none;
   cursor: pointer;
+  background-color: rgb(159, 114, 201);
 }
 
 .input {
-  width: 360px;
   border: none;
+  width: 360px;
 }
 ::placeholder {
   font-style: italic;
@@ -27,6 +29,7 @@
   height: 55px;
   border: none;
   cursor: pointer;
+  background-color: white;
 }
 :active,
 :hover,

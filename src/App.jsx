@@ -14,7 +14,7 @@ const App = () => {
   const [selectedImage, setSelectedImage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   const [query, setQuery] = useState("");
   const [totalPages, setTotalPages] = useState(0);
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -96,7 +96,7 @@ const App = () => {
         <ImageGallery images={images} openModal={openModal} />
       )}
       {images.length > 0 && totalPages !== page && (
-        <LoadMoreBtn onClick={handleChangePage} />
+        <LoadMoreBtn handleChangePage={handleChangePage} />
       )}
       {isError && <ErrorMessage />}
     </div>
